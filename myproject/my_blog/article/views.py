@@ -5,7 +5,8 @@ from datetime import datetime
 
 # Create your views here.
 def home(request):
-    return HttpResponse('Hello World,Django')
+    post_list = Article.objects.all()
+    return render(request,'home.html',{'post_list':post_list})
 
 def detail(request):
     post = Article.objects.all()
@@ -16,3 +17,4 @@ def detail(request):
 
 def test(request):
     return render(request,'test.html',{'current_time':datetime.now()})
+

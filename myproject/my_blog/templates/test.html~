@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shiyanlou</title>
+        <style>
+            body{background-color:red;}
+            em{color:LightSeaGreen}
+        </style>
+    </head>
+    <body>
+        <h1>Hello Django!</h1>
+        <strong>{{current_time}}</strong>
+    </body>
+</html>
